@@ -9,6 +9,15 @@
 
 <body>
   <p>This is a very verbose long lengthy annoying never ending sentence</p>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    $.get('https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3')
+      .then(function (response) {
+        console.log(response);
+      })
+  </script>
 </body>
 
 </html>
